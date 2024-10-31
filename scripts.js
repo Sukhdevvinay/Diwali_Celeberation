@@ -185,22 +185,22 @@ const configs = {
       }
     }
   },
-  sounds: {
-    enable: true,
-    events: [
-      {
-        event: "particleRemoved",
-        filter: (args) => args.data.particle.options.move.gravity.inverse,
-        audio: [
-          "Jetha.mp3", // Add your audio file here
-          "https://particles.js.org/audio/explosion0.mp3",
-          "https://particles.js.org/audio/explosion1.mp3",
-          "https://particles.js.org/audio/explosion2.mp3",
-        ]
-      }
-    ],
-    volume: 50
-}
+//   sounds: {
+//     enable: true,
+//     events: [
+//       {
+//         event: "particleRemoved",
+//         filter: (args) => args.data.particle.options.move.gravity.inverse,
+//         audio: [
+//           "Jetha.mp3", // Add your audio file here
+//           "https://particles.js.org/audio/explosion0.mp3",
+//           "https://particles.js.org/audio/explosion1.mp3",
+//           "https://particles.js.org/audio/explosion2.mp3",
+//         ]
+//       }
+//     ],
+//     volume: 50
+// }
 };
 
 loadParticles(configs);
