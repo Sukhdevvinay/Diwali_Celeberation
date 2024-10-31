@@ -115,12 +115,12 @@ body {
 }
 .diya-container {
 	height: 25em;
-	width: 25em;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: calc(50% + 37.5em);
-	left: calc(50% + 9.37em);
-	animation: diya 3s forwards;
+    width: 25em;
+    position: absolute;
+    transform: translate(-58%, -28%);
+    top: calc(50% + 37.5em);
+    left: calc(50% + 9.37em);
+    animation: diya 3s forwards;
 }
 @keyframes diya {
 	100% {
