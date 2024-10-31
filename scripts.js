@@ -5,7 +5,7 @@ async function loadParticles(options) {
   await tsParticles.load({ id: "tsparticles", options });
 }
 let a = prompt("Enter Your Name : ");
-if(a!= null) {
+if(a!="") {
   document.body.innerHTML = document.body.innerHTML + `<audio src="Jetha.mp3" autoplay loop></audio>`;
   document.getElementById("qru").innerHTML = document.getElementById("qru").innerHTML + `<h4>${a}</h4>`;
 } else {
