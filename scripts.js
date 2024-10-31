@@ -5,7 +5,7 @@ async function loadParticles(options) {
   await tsParticles.load({ id: "tsparticles", options });
 }
 let a = prompt("Enter Your Name : ");
-document.getElementById("qru").innerHTML = document.getElementById("qru").innerHTML + `<h3>${a}</h3>`;
+document.getElementById("qru").innerHTML = document.getElementById("qru").innerHTML + `<h4>${a}</h4>`;
 const configs = {
   name: "Fireworks Mask",
   fullScreen: {
