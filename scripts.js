@@ -4,33 +4,8 @@ async function loadParticles(options) {
   await loadAll(tsParticles);
   await tsParticles.load({ id: "tsparticles", options });
 }
-// Function to ask for user's name and play audio
-function getUserNameAndPlayAudio() {
-  const name = prompt("Please enter your name:");
-  if (name) {
-      const audio = document.getElementById('audioElement');
-      
-      // Mute the audio first for autoplay
-      // audio.muted = true; // Mute audio to allow autoplay
-      // audio.play().catch(error => {
-      //     console.error('Error playing audio:', error);
-      // });
-
-      // // Set a timeout to unmute after a short delay
-      // setTimeout(() => {
-      //     audio.muted = false; // Unmute audio after it starts playing
-      // }, 100); // Adjust the delay if necessary
-
-      // Update the message with the user's name
-      document.getElementById('qru').innerHTML = `<h4>Happy Diwali, ${name}!</h4>`;
-  } else {
-      alert('Please enter your name to enjoy the music!');
-  }
-}
-
-// Call the function when the page loads
-window.onload = getUserNameAndPlayAudio;
-
+let a = prompt("Enter Your Name : ");
+document.getElementById("qru").innerHTML = document.getElementById("qru").innerHTML + `<h4>${a}</h4>`;
 const configs = {
   name: "Fireworks Mask",
   fullScreen: {
